@@ -15,7 +15,13 @@ while True:
     opcao = input(menu)
 
     if opcao == "1":
-        print("Depósito")
+        deposito = int(input("Digite um valor para Depósito: R$ "))
+        if deposito > 0:
+            saldo = saldo + deposito
+            print(f"Seu novo saldo é R$ {saldo}")
+
+        else:
+            print("Digite um valor válido!")
 
     elif opcao == "2":
         print("Saque")
